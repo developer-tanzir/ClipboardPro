@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>History — java2dex</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B1220'/%3E%3Crect x='10' y='10' width='12' height='12' rx='2' fill='none' stroke='%23E8963B' stroke-width='2'/%3E%3Cpath d='M13 6v4M19 6v4M13 22v4M19 22v4M6 13h4M6 19h4M22 13h4M22 19h4' stroke='%23E8963B' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#0B1220" />
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="java2dex" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="/" class="brand"><span class="brand-chip"></span>java2dex</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/convert">Convert</a>
+        <a href="/decompile">Decompile</a>
+        <a href="/history">History</a>
+        <a href="/about">About</a>
+        <a href="/help">Help</a>
+      </div>
+      <button class="btn btn-primary btn-sm install-btn">⤓ Install App</button>
+      <a href="/settings" class="gear-btn" aria-label="Settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<div class="tabbar">
+  <div class="tabbar-inner">
+    <a href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/></svg>Home</a>
+    <a href="/convert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h13M17 7l-3-3M17 7l-3 3"/><path d="M20 17H7M7 17l3-3M7 17l3 3"/></svg>Convert</a>
+    <a href="/decompile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>Decompile</a>
+    <a href="/history"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>History</a>
+    <a href="/settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>Settings</a>
+  </div>
+</div>
+
+<main class="page-main">
+  <section class="wrap" style="padding-top:40px;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px;">
+      <div>
+        <span class="eyebrow">History</span>
+        <h1 style="font-size:clamp(26px,4vw,36px); margin-top:10px;">Your past runs</h1>
+        <p class="lede" style="margin-top:8px;">Stored only in this browser's local storage. Clearing it removes everything — nothing lives on a server.</p>
+      </div>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn btn-ghost btn-sm" id="exportBtn">⬇ Export JSON</button>
+        <button class="btn btn-ghost btn-sm" id="importBtn">⬆ Import JSON</button>
+        <input type="file" id="importInput" accept=".json" style="display:none;" />
+        <button class="btn btn-danger-ghost btn-sm" id="clearBtn">Clear history</button>
+      </div>
+    </div>
+
+    <div id="historyList" style="margin-top:28px;"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>java2dex — javac + d8, in the browser.</span>
+    <span>Free to use. No account required.</span>
+  </div>
+</footer>
+
+<script src="/js/nav.js"></script>
+<script src="/js/history.js"></script>
+<script>
+  const historyList = document.getElementById('historyList');
+  const clearBtn = document.getElementById('clearBtn');
+
+  function fmtSize(bytes) {
+    if (bytes == null) return '';
+    if (bytes < 1024) return bytes + ' B';
+    if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+    return (bytes / (1024 * 1024)).toFixed(2) + ' MB';
+  }
+  function fmtTime(ts) {
+    const d = new Date(ts);
+    return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) + ' · ' +
+           d.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
+  }
+
+  function render() {
+    const items = J2DHistory.getAll();
+    if (items.length === 0) {
+      historyList.innerHTML = `
+        <div class="empty-state card">
+          <div class="prompt-line">&gt;_ no builds logged yet</div>
+          <p style="margin-bottom:20px;">Convert a file and it'll show up here.</p>
+          <a href="/convert" class="btn btn-primary">Go to Convert →</a>
+        </div>`;
+      return;
+    }
+
+    historyList.innerHTML = '';
+    items.forEach(entry => {
+      const fileNames = (entry.inputFiles || []).map(f => f.name).join(', ');
+      const isSuccess = entry.status === 'success';
+      const div = document.createElement('div');
+      div.className = 'history-item';
+
+      const badge = isSuccess
+        ? `<span class="badge badge-success">done</span>`
+        : `<span class="badge badge-error">failed</span>`;
+      const kindBadge = entry.kind === 'decompile'
+        ? `<span class="badge badge-pasted" style="margin-top:6px;">decompile</span>`
+        : `<span class="badge badge-file" style="margin-top:6px;">convert</span>`;
+
+      const titleText = isSuccess ? (entry.outputName || 'classes.dex') : 'Conversion failed';
+      const metaLine = isSuccess
+        ? `${fmtSize(entry.outputSizeBytes)} · from ${entry.inputFiles ? entry.inputFiles.length : 0} file(s): ${fileNames}`
+        : `from ${entry.inputFiles ? entry.inputFiles.length : 0} file(s): ${fileNames}`;
+
+      let actions = '';
+      if (isSuccess && entry.outputBase64) {
+        actions += `<button class="btn btn-ghost btn-sm" data-action="download" data-id="${entry.id}">Download</button>`;
+      }
+      actions += `<button class="btn btn-danger-ghost btn-sm" data-action="delete" data-id="${entry.id}">Delete</button>`;
+
+      div.innerHTML = `
+        <div>${badge}<br/>${kindBadge}</div>
+        <div>
+          <div class="hist-title">${titleText}</div>
+          <div class="hist-meta">${fmtTime(entry.timestamp)} — ${metaLine}</div>
+          ${!isSuccess && entry.errorMessage ? `<div class="hist-meta" style="color:var(--danger); margin-top:6px; white-space:pre-wrap;">${escapeHtml(entry.errorMessage).slice(0, 300)}</div>` : ''}
+        </div>
+        <div class="history-actions">${actions}</div>
+      `;
+      historyList.appendChild(div);
+    });
+
+    historyList.querySelectorAll('button[data-action="download"]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const entry = J2DHistory.getAll().find(e => e.id === btn.dataset.id);
+        if (!entry || !entry.outputBase64) return;
+        const blob = base64ToBlob(entry.outputBase64, 'application/octet-stream');
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url; a.download = entry.outputName || 'classes.dex';
+        document.body.appendChild(a); a.click(); a.remove();
+        URL.revokeObjectURL(url);
+        showToast('Downloaded ' + (entry.outputName || 'classes.dex'));
+      });
+    });
+    historyList.querySelectorAll('button[data-action="delete"]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        J2DHistory.remove(btn.dataset.id);
+        render();
+        showToast('Entry removed');
+      });
+    });
+  }
+
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  clearBtn.addEventListener('click', () => {
+    if (!confirm('Clear all conversion history? This cannot be undone.')) return;
+    J2DHistory.clear();
+    render();
+    showToast('History cleared');
+  });
+
+  // ---- export / import ----
+  document.getElementById('exportBtn').addEventListener('click', () => {
+    const data = J2DHistory.getAll();
+    if (data.length === 0) { showToast('No history to export'); return; }
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'java2dex-history-' + new Date().toISOString().slice(0, 10) + '.json';
+    document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+    showToast('History exported');
+  });
+
+  const importInput = document.getElementById('importInput');
+  document.getElementById('importBtn').addEventListener('click', () => importInput.click());
+  importInput.addEventListener('change', () => {
+    const file = importInput.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const imported = JSON.parse(reader.result);
+        if (!Array.isArray(imported)) throw new Error('not an array');
+        const existing = J2DHistory.getAll();
+        const existingIds = new Set(existing.map(e => e.id));
+        let added = 0;
+        imported.forEach(entry => {
+          if (entry && !existingIds.has(entry.id)) {
+            existing.push(entry);
+            added++;
+          }
+        });
+        existing.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+        J2DHistory._trySave(existing);
+        render();
+        showToast(added + ' entr' + (added === 1 ? 'y' : 'ies') + ' imported');
+      } catch (e) {
+        showToast('That file doesn\'t look like a valid history export.');
+      }
+    };
+    reader.readAsText(file);
+    importInput.value = '';
+  });
+
+  render();
+</script>
+</body>
+</html>
