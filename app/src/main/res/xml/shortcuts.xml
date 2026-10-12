@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_capture"
+        android:shortcutId="capture_clipboard"
+        android:shortcutLongLabel="@string/shortcut_capture_long"
+        android:shortcutShortLabel="@string/shortcut_capture_short">
+        <intent
+            android:action="com.Clipboard.Pro.action.CAPTURE"
+            android:targetClass="com.Clipboard.Pro.ui.CaptureActivity"
+            android:targetPackage="com.Clipboard.Pro" />
+    </shortcut>
+</shortcuts>
